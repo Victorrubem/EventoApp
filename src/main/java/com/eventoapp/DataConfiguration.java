@@ -21,8 +21,8 @@ public class DataConfiguration {
 		
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/eventoapp?useTimezone=true&serverTimezone=UTC");//?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC
-		dataSource.setUsername("root");
+		dataSource.setUrl("jdbc:mysql://www.db4free.net:3306/eventoapp?useTimezone=true&serverTimezone=UTC");//?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC
+		dataSource.setUsername("victorrubem");
 		dataSource.setPassword("Radix4512");
 		Properties connectionProperties = new Properties();
 		connectionProperties.setProperty("spring.jpa.hibernate.ddl-auto", "update");
@@ -41,7 +41,7 @@ public class DataConfiguration {
 		adapter.setDatabase(Database.MYSQL);
 		adapter.setShowSql(true);
 		adapter.setGenerateDdl(true);
-		adapter.setDatabasePlatform("org.hibernate.dialect.MySQL8Dialect");
+		adapter.setDatabasePlatform("org.hibernate.dialect.MySQL5Dialect");
 		adapter.setPrepareConnection(true);
 		
 		return adapter;
