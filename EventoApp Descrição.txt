@@ -1,0 +1,1 @@
+EventoApp é um sistema de criação de eventos, adicionando uma lista de convidados á ela.
