@@ -30,7 +30,7 @@ public class EventoController {
 	
 	@RequestMapping(value="/cadastrarEvento", method = RequestMethod.GET)
 	public String form() {
-		return "/evento/formEvento";
+		return "evento/formEvento";
 	}
 	
 	
